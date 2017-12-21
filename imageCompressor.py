@@ -5,7 +5,7 @@ import matplotlib.image as mpimg
 import seaborn as sns
 from scipy import misc
 print('Image Compressor ML Algorithm')
-arr = misc.imread('_DSC0005 2.JPG')
+arr = misc.imread('dp.jpg')
 img_size = arr.shape
 arr_ = arr.astype(float)
 arr_ = np.divide(arr, 255)
