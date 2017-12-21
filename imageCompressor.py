@@ -1,3 +1,5 @@
+#  Author aashish-ak
+
 import numpy as np
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
@@ -17,10 +19,8 @@ arr_compressed = arr_compressed.reshape(img_size[0], img_size[1], 3)
 fig = plt.figure()
 a = fig.add_subplot(1, 2, 1)
 plt.imshow(arr)
-a.set_title('Before')
-plt.colorbar(ticks=[0.1,0.3,0.5,0.7], orientation = 'horizontal')
+a.set_title('Original')
 a = fig.add_subplot(1, 2, 2)
 plt.imshow(arr_compressed)
 a.set_title('Compressed to 20 colors')
-plt.colorbar(ticks=[0.1,0.3,0.5,0.7], orientation = 'horizontal')
 plt.show()
